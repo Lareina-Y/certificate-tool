@@ -1,8 +1,92 @@
-#textId {
-    margin: auto;
-    text-align:         center;
-    padding:            10px;
-    width:              220px;
-    border:             1.5px solid white;
+section {
+    border: 1px solid red;
+    padding: 10px;
 }
 
+button {
+    background-color: rgba(218, 210, 210, 0.8);
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    opacity: 0.5;
+}
+
+button:hover{ 
+    opacity: 1;
+    font-size: 15px;
+}
+
+.cs3151 {
+    background: linear-gradient(90deg, #0162c8, #55e7fc);
+    color: whitesmoke;
+}
+
+.cs3154 {
+    background: grey;
+    color: white;
+}
+
+.cs3172 {
+    background: blue;
+    color: whitesmoke;
+}
+
+.cs3160 {
+    background: yellow;
+
+}
+
+.cs4141 {
+    background: purple;
+    color: whitesmoke;
+}
+
+.cs4144 {
+    background:pink;
+}
+
+.cs4145 {
+    background: brown;
+    color: whitesmoke;
+}
+
+.cs4152 {
+    background: lightblue;
+}
+
+.cs4155 {
+    background: gold;
+}
+
+.cs4166 {
+    background: green;
+    color: whitesmoke;
+}
+
+.cs4168 {
+    background: paleturquoise;
+}
+
+.cs4169 {
+    background: limegreen;
+}
+
+.cs4171 {
+    background: red;
+    color: whitesmoke;
+}
+
+.cs4174 {
+    background: lightseagreen;
+    color: whitesmoke;
+}
+
+.cs4176 {
+    background: darkkhaki;
+}
+
+.st2080 {
+    background: linear-gradient(90deg,#755bea,#ff72c0);
+    color: whitesmoke;
+}
