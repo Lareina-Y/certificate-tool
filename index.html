@@ -9,113 +9,117 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" href="css/course.css">
-  <script defer src="js/button.js"></script>   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+  <script src="js/button.js"></script>   
 </head>
 
 <body>
   <h1>Dal CS Certificate Choosing Tool</h1>
+  <h3>
+    Total of courses: <span id="total">0</span>    
+    <button id="resetId" onclick="resetClick()">RESET</button>
+  </h3>
 
   <section class="AI">
     <h2>Artificial Intelligence and Intelligent Systems</h2>
     <div class="required">
-      <h3>Required:</h3>
-      <button class="cs3151">CSCI 3151</button>
+      <h3>Required: <span>0</span> of 1</h3>
+      <button class="cs3151" onclick="clickOn(this)">CSCI 3151</button>
     </div>
     
     <div class="elective">
-      <h3>Elective:</h3>
-      <button class="cs4141">CSCI 4141</button>
-      <button class="cs4144">CSCI 4144</button>
-      <button class="cs4152">CSCI 4152</button>
-      <button class="cs4155">CSCI 4155</button>
-      <button class="cs4156">CSCI 4156</button>
+      <h3>Elective: <span>0</span> of 3</h3>
+      <button class="cs4141" onclick="clickOn(this)">CSCI 4141</button>
+      <button class="cs4144" onclick="clickOn(this)">CSCI 4144</button>
+      <button class="cs4152" onclick="clickOn(this)">CSCI 4152</button>
+      <button class="cs4155" onclick="clickOn(this)">CSCI 4155</button>
+      <button class="cs4156" onclick="clickOn(this)">CSCI 4156</button>
     </div>
   </section>
 
   <section class="dataScience">
     <h2>Data Science</h2>
     <div class="required">
-      <h3>Required:</h3>
-      <button class="cs4146">CSCI 4146</button>
-      <button class="cs4145">CSCI 4145</button>
-      <button class="cs3151" class="cs4125">CSCI 3151 or CSCI 4125</button>
+      <h3>Required: <span>0</span> of 3</h3>
+      <button class="cs4146" onclick="clickOn(this)">CSCI 4146</button>
+      <button class="cs4145" onclick="clickOn(this)">CSCI 4145</button>
+      <button class="cs3151" class="cs4125" onclick="clickOn(this)">CSCI 3151 or CSCI 4125</button>
     </div>
     
     <div class="elective">
-      <h3>Elective:</h3>
-      <button class="cs3151" class="cs4125">CSCI 3151 or CSCI 4125</button>
-      <button class="cs3154">CSCI 3154</button>
-      <button class="cs4141">CSCI 4141</button>
-      <button class="cs4144">CSCI 4144</button>
-      <button class="cs4152">CSCI 4152</button>
-      <button class="cs4155">CSCI 4155</button>
-      <button class="cs4166">CSCI 4166</button>
-      <button class="st2080">STAT 2080</button>
-      <button class="st3340">STAT 3340</button>
+      <h3>Elective: <span>0</span> of 3</h3>
+      <button class="or" onclick="clickOn(this)">CSCI 3151 or CSCI 4125</button>
+      <button class="cs3154" onclick="clickOn(this)">CSCI 3154</button>
+      <button class="cs4141" onclick="clickOn(this)">CSCI 4141</button>
+      <button class="cs4144" onclick="clickOn(this)">CSCI 4144</button>
+      <button class="cs4152" onclick="clickOn(this)">CSCI 4152</button>
+      <button class="cs4155" onclick="clickOn(this)">CSCI 4155</button>
+      <button class="cs4166" onclick="clickOn(this)">CSCI 4166</button>
+      <button class="st2080" onclick="clickOn(this)">STAT 2080</button>
+      <button class="st3340" onclick="clickOn(this)">STAT 3340</button>
     </div>
   </section>
 
   <section class="cyber">
     <h2>Communication Technologies and Cyber Security</h2>
     <div class="required">
-      <h3>Required:</h3>
-      <button class="cs3121">CSCI 3120</button>
-      <button class="cs3171">CSCI 3171</button>
+      <h3>Required: <span>0</span> of 2</h3>
+      <button class="cs3121" onclick="clickOn(this)">CSCI 3120</button>
+      <button class="cs3171" onclick="clickOn(this)">CSCI 3171</button>
     </div>
     
     <div class="elective">
-      <h3>Elective:</h3>
-      <button class="cs3172">CSCI 3172</button>
-      <button class="cs4116">CSCI 4116</button>
-      <button class="cs4169">CSCI 4169</button>
-      <button class="cs4171">CSCI 4171</button>
-      <button class="cs4174">CSCI 4174</button>
-      <button class="cs4176">CSCI 4176</button>
+      <h3>Elective: <span>0</span> of 3</h3>
+      <button class="cs3172" onclick="clickOn(this)">CSCI 3172</button>
+      <button class="cs4116" onclick="clickOn(this)">CSCI 4116</button>
+      <button class="cs4169" onclick="clickOn(this)">CSCI 4169</button>
+      <button class="cs4171" onclick="clickOn(this)">CSCI 4171</button>
+      <button class="cs4174" onclick="clickOn(this)">CSCI 4174</button>
+      <button class="cs4176" onclick="clickOn(this)">CSCI 4176</button>
     </div>
   </section>
 
   <section class="game">
     <h2>Graphics, Gaming, and Media</h2>
     <div class="required">
-      <h3>Required:</h3>
-      <button class="cs3161">CSCI 3161</button>
-      <button class="cs3162">CSCI 3162</button>
-      <button class="cs4168">CSCI 4168</button>
+      <h3>Required: <span>0</span> of 3</h3>
+      <button class="cs3161" onclick="clickOn(this)">CSCI 3161</button>
+      <button class="cs3162" onclick="clickOn(this)">CSCI 3162</button>
+      <button class="cs4168" onclick="clickOn(this)">CSCI 4168</button>
     </div>
     
     <div class="elective">
-      <h3>Elective:</h3>
-      <button class="cs3154">CSCI 3154</button>
-      <button class="cs4160">CSCI 4160</button>
-      <button class="cs4166">CSCI 4166</button>
-      <button class="cs4167">CSCI 4167</button>
+      <h3>Elective: <span>0</span> of 2</h3>
+      <button class="cs3154" onclick="clickOn(this)">CSCI 3154</button>
+      <button class="cs4160" onclick="clickOn(this)">CSCI 4160</button>
+      <button class="cs4166" onclick="clickOn(this)">CSCI 4166</button>
+      <button class="cs4167" onclick="clickOn(this)">CSCI 4167</button>
     </div>
   </section>
 
   <section class="UE">
     <h2>User Experience Design and Evaluation</h2>
     <div class="required">
-      <h3>Required:</h3>
-      <button class="cs3160">CSCI 3160</button>
-      <button class="cs4163">CSCI 4163</button>
+      <h3>Required: <span>0</span> of 2</h3>
+      <button class="cs3160" onclick="clickOn(this)">CSCI 3160</button>
+      <button class="cs4163" onclick="clickOn(this)">CSCI 4163</button>
     </div>
     
     <div class="elective">
-      <h3>Elective:</h3>
+      <h3>Elective: <span>0</span> of 4</h3>
       <div class="groupA">
-        <h4>Group A:</h4>
-        <button class="cs4126">CSCI 4126</button>
-        <button class="cs4169">CSCI 4169</button>
+        <h4>Group A: <span>0</span> of 1</h4>
+        <button class="cs4126" onclick="clickOn(this)">CSCI 4126</button>
+        <button class="cs4169" onclick="clickOn(this)">CSCI 4169</button>
       </div>
 
       <div class="groupB">
         <h4>Group B:</h4>
-        <button class="st2080">STAT 2080</button>
-        <button class="cs4166">CSCI 4166</button>
-        <button class="cs4168">CSCI 4168</button>
-        <button class="cs4176">CSCI 4176</button>
-        <button class="cs3190" class="cs3691">CSCI 3190 or CSCI 3691</button>
+        <button class="st2080" onclick="clickOn(this)">STAT 2080</button>
+        <button class="cs4166" onclick="clickOn(this)">CSCI 4166</button>
+        <button class="cs4168" onclick="clickOn(this)">CSCI 4168</button>
+        <button class="cs4176" onclick="clickOn(this)">CSCI 4176</button>
+        <button class="cs3190" class="cs3691" onclick="clickOn(this)">CSCI 3190 or CSCI 3691</button>
       </div>
     </div>
   </section>
@@ -123,20 +127,20 @@
   <section class="web">
     <h2>Web & Mobile Development</h2>
     <div class="required">
-      <h3>Required:</h3>
-      <button class="cs3160">CSCI 3160</button>
-      <button class="cs3172">CSCI 3172</button>
-      <button class="cs4176">CSCI 4176</button>
-      <button class="cs4177">CSCI 4177</button>
+      <h3>Required: <span>0</span> of 4</h3>
+      <button class="cs3160" onclick="clickOn(this)">CSCI 3160</button>
+      <button class="cs3172" onclick="clickOn(this)">CSCI 3172</button>
+      <button class="cs4176" onclick="clickOn(this)">CSCI 4176</button>
+      <button class="cs4177" onclick="clickOn(this)">CSCI 4177</button>
     </div>
     
     <div class="elective">
-      <h3>Elective:</h3>
-      <button class="cs3151">CSCI 3151</button>
-      <button class="cs4145">CSCI 4145</button>
-      <button class="cs4169">CSCI 4169</button>
-      <button class="cs4171">CSCI 4171</button>
-      <button class="cs4174">CSCI 4174</button>
+      <h3>Elective: <span>0</span> of 2</h3>
+      <button class="cs3151" onclick="clickOn(this)">CSCI 3151</button>
+      <button class="cs4145" onclick="clickOn(this)">CSCI 4145</button>
+      <button class="cs4169" onclick="clickOn(this)">CSCI 4169</button>
+      <button class="cs4171" onclick="clickOn(this)">CSCI 4171</button>
+      <button class="cs4174" onclick="clickOn(this)">CSCI 4174</button>
     </div>
   </section>
 
