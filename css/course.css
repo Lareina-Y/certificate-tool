@@ -23,7 +23,15 @@ button:hover{
     font-size: 15px;
 }
 
-.cs3151 {
+#headerId {
+    border-bottom: 1px solid red;
+    padding: 2px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
+button.cs3151 {
     background: linear-gradient(90deg, #0162c8, #55e7fc);
     color: whitesmoke;
 }
@@ -52,7 +60,7 @@ button:hover{
     background:pink;
 }
 
-.cs4145 {
+button.cs4145 {
     background: brown;
     color: whitesmoke;
 }
@@ -96,3 +104,4 @@ button:hover{
     background: linear-gradient(90deg,#755bea,#ff72c0);
     color: whitesmoke;
 }
+
