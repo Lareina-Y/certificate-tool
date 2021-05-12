@@ -1,0 +1,44 @@
+h1 {
+    padding-left: 10px;
+}
+
+section {
+    border-bottom: 1px solid red;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    padding: 10px;
+}
+
+button {
+    background-color: rgba(218, 210, 210, 0.8);
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    opacity: 0.3;
+}
+
+button:hover{ 
+    opacity: 1;
+    font-size: 15px;
+}
+
+#headerId {
+    border: 1px solid red;
+    border: 1px solid red;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    display: flex;
+}
+
+aside h3 {
+    margin: auto;
+}
+
+#resetId {
+    opacity: 1;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: auto;
+}

@@ -8,17 +8,21 @@
   <meta name="author" content="Lareina-Y">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
+  <link rel="stylesheet" href="css/basic.css">
   <link rel="stylesheet" href="css/course.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
   <script src="js/button.js"></script>   
+  <script src="js/checkCertificate.js"></script>
 </head>
 
-<body>
+<body onload="mainProcedure();">
   <h1>Dal CS Certificate Choosing Tool</h1>
-  <h3 id="headerId">
-    Total of courses: <span id="total">0</span>    
+
+  <aside id="headerId">
+    <h3>Total of courses: <span id="total">0</span></h3>
+    <h3>Certificates Completed: <span id="completed">0</span></h3>
     <button id="resetId" onclick="resetClick()">RESET</button>
-  </h3>
+  </aside>
 
   <section class="AI">
     <h2>Artificial Intelligence and Intelligent Systems</h2>

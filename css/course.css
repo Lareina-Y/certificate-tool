@@ -1,37 +1,4 @@
-section {
-    border: 1px solid red;
-    padding: 10px;
-}
-
-button {
-    background-color: rgba(218, 210, 210, 0.8);
-    padding: 10px;
-    border-radius: 20px;
-    cursor: pointer;
-    border: 1px solid transparent;
-    opacity: 0.3;
-}
-
-#resetId {
-    opacity: 1;
-    border-radius: 0px;
-    border: 1px solid black;
-}
-
-button:hover{ 
-    opacity: 1;
-    font-size: 15px;
-}
-
-#headerId {
-    border-bottom: 1px solid red;
-    padding: 2px;
-    background-color: white;
-    position: sticky;
-    top: 0;
-}
-
-button.cs3151 {
+.cs3151 {
     background: linear-gradient(90deg, #0162c8, #55e7fc);
     color: whitesmoke;
 }
@@ -60,7 +27,7 @@ button.cs3151 {
     background:pink;
 }
 
-button.cs4145 {
+.cs4145 {
     background: brown;
     color: whitesmoke;
 }
