@@ -8,7 +8,7 @@ Tips:
 
 	(1)只学CSCI 3151 ---> 请在 Required B 中选择 "CSCI 3151 (or CSCI 4125)", 并不要在Elective中选择“CSCI 3151 or CSCI 4125”。
 
-	(2）只学CSCI 4125 ---> 请在 Required B 中选择 "(CSCI 3151 or) CSCI 4125", 并不要在Elective中选择“CSCI 3151 or CSCI 4125”。
+	(2)只学CSCI 4125 ---> 请在 Required B 中选择 "(CSCI 3151 or) CSCI 4125", 并不要在Elective中选择“CSCI 3151 or CSCI 4125”。
 
 	(3)两者都学 ---> 请在 Required B 中选择 "CSCI 3151 (or CSCI 4125)", 并在 Elective中选择 “CSCI 3151 or CSCI 4125”。
 
