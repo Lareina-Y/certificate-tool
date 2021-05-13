@@ -15,7 +15,7 @@
   <script src="js/checkCertificate.js"></script>
 </head>
 
-<body onload="mainProcedure();">
+<body>
   <h1>Dal CS Certificate Choosing Tool</h1>
 
   <aside id="headerId">
@@ -24,15 +24,15 @@
     <button id="resetId" onclick="resetClick()">RESET</button>
   </aside>
 
-  <section class="AI">
+  <section id="AI">
     <h2>Artificial Intelligence and Intelligent Systems</h2>
     <div class="required">
-      <h3>Required: <span class="cs3151i">0</span> of 1</h3>
+      <h3>Required: <span class="AI cs3151i">0</span> of <span class="AIC">1</span></h3>
       <button class="cs3151" onclick="clickOn(this)">CSCI 3151</button>
     </div>
     
     <div class="elective">
-      <h3>Elective: <span class="cs4141i cs4144i cs4152i cs4155i cs4156i">0</span> of 3</h3>
+      <h3>Elective: <span class="AI cs4141i cs4144i cs4152i cs4155i cs4156i">0</span> of <span class="AIC">3</span></h3>
       <button class="cs4141" onclick="clickOn(this)">CSCI 4141</button>
       <button class="cs4144" onclick="clickOn(this)">CSCI 4144</button>
       <button class="cs4152" onclick="clickOn(this)">CSCI 4152</button>
@@ -41,17 +41,20 @@
     </div>
   </section>
 
-  <section class="dataScience">
+  <section id="data">
     <h2>Data Science</h2>
     <div class="required">
-      <h3>Required: <span class="cs4146i cs4145i cs3151i cs4125i">0</span> of 3</h3>
+      <h3>Required A: <span class="data cs4146i cs4145i">0</span> of <span class="dataC">2</span></h3>
       <button class="cs4146" onclick="clickOn(this)">CSCI 4146</button>
       <button class="cs4145" onclick="clickOn(this)">CSCI 4145</button>
-      <button class="cs3151" class="cs4125" onclick="clickOn(this)">CSCI 3151 or CSCI 4125</button>
+      <h3>Required B: <span class="data cs3151i cs4125i">0</span> of <span class="dataC">1</span></h3>
+      <button class="cs3151" onclick="clickOn(this)">CSCI 3151 (or CSCI 4125)</button>
+      <button class="cs4125" onclick="clickOn(this)">(CSCI 3151 or) CSCI 4125</button>
     </div>
     
     <div class="elective">
-      <h3>Elective: <span class="cs3154i cs4141i cs4144i cs4152i cs4155i cs4166i st2080i st3340i">0</span> of 3</h3>
+      <h3>Elective: <span class="data ori cs3154i cs4141i cs4144i cs4152i cs4155i cs4166i st2080i st3340i">
+        0</span> of <span class="dataC">3</span></h3>
       <button class="or" onclick="clickOn(this)">CSCI 3151 or CSCI 4125</button>
       <button class="cs3154" onclick="clickOn(this)">CSCI 3154</button>
       <button class="cs4141" onclick="clickOn(this)">CSCI 4141</button>
@@ -64,16 +67,17 @@
     </div>
   </section>
 
-  <section class="cyber">
+  <section id="cyber">
     <h2>Communication Technologies and Cyber Security</h2>
     <div class="required">
-      <h3>Required: <span class="cs3121i cs3171i">0</span> of 2</h3>
+      <h3>Required: <span class="cyber cs3121i cs3171i">0</span> of <span class="cyberC">2</span></h3>
       <button class="cs3121" onclick="clickOn(this)">CSCI 3120</button>
       <button class="cs3171" onclick="clickOn(this)">CSCI 3171</button>
     </div>
     
     <div class="elective">
-      <h3>Elective: <span class="cs3172i cs4116i cs4169i cs4171i cs4174i cs4176i">0</span> of 3</h3>
+      <h3>Elective: <span class="cyber cs3172i cs4116i cs4169i cs4171i cs4174i cs4176i">
+        0</span> of <span class="cyberC">3</span></h3>
       <button class="cs3172" onclick="clickOn(this)">CSCI 3172</button>
       <button class="cs4116" onclick="clickOn(this)">CSCI 4116</button>
       <button class="cs4169" onclick="clickOn(this)">CSCI 4169</button>
@@ -83,17 +87,18 @@
     </div>
   </section>
 
-  <section class="game">
+  <section id="game">
     <h2>Graphics, Gaming, and Media</h2>
     <div class="required">
-      <h3>Required: <span class="cs3161i cs3162i cs4168i">0</span> of 3</h3>
+      <h3>Required: <span class="game cs3161i cs3162i cs4168i">0</span> of <span class="gameC">3</span></h3>
       <button class="cs3161" onclick="clickOn(this)">CSCI 3161</button>
       <button class="cs3162" onclick="clickOn(this)">CSCI 3162</button>
       <button class="cs4168" onclick="clickOn(this)">CSCI 4168</button>
     </div>
     
     <div class="elective">
-      <h3>Elective: <span class="cs3154i cs4160i cs4166i cs4167i">0</span> of 2</h3>
+      <h3>Elective: <span class="game cs3154i cs4160i cs4166i cs4167i">
+        0</span> of <span class="gameC">2</span></h3>
       <button class="cs3154" onclick="clickOn(this)">CSCI 3154</button>
       <button class="cs4160" onclick="clickOn(this)">CSCI 4160</button>
       <button class="cs4166" onclick="clickOn(this)">CSCI 4166</button>
@@ -101,18 +106,19 @@
     </div>
   </section>
 
-  <section class="UE">
+  <section id="UE">
     <h2>User Experience Design and Evaluation</h2>
     <div class="required">
-      <h3>Required: <span class="cs3160i cs4163i">0</span> of 2</h3>
+      <h3>Required: <span class="UE cs3160i cs4163i">0</span> of <span class="UEC">2</span></h3>
       <button class="cs3160" onclick="clickOn(this)">CSCI 3160</button>
       <button class="cs4163" onclick="clickOn(this)">CSCI 4163</button>
     </div>
     
     <div class="elective">
-      <h3>Elective: <span class="cs4126i cs4169i st2080i cs4166i cs4168i cs4176i cs3190i cs3691i">0</span> of 4</h3>
+      <h3>Elective: <span class="UE cs4126i cs4169i st2080i cs4166i cs4168i cs4176i cs3190i cs3691i">
+        0</span> of <span class="UEC">4</span></h3>
       <div class="groupA">
-        <h4>Group A: <span class="cs4126i cs4169i">0</span> of 1</h4>
+        <h4>Group A: <span class="UE cs4126i cs4169i">0</span> of <span class="UEC">1</span></h4>
         <button class="cs4126" onclick="clickOn(this)">CSCI 4126</button>
         <button class="cs4169" onclick="clickOn(this)">CSCI 4169</button>
       </div>
@@ -128,10 +134,11 @@
     </div>
   </section>
   
-  <section class="web">
+  <section id="web">
     <h2>Web & Mobile Development</h2>
     <div class="required">
-      <h3>Required: <span class="cs3160i cs3172i cs4176i cs4177i">0</span> of 4</h3>
+      <h3>Required: <span class="web cs3160i cs3172i cs4176i cs4177i">
+        0</span> of <span class="webC">4</span></h3>
       <button class="cs3160" onclick="clickOn(this)">CSCI 3160</button>
       <button class="cs3172" onclick="clickOn(this)">CSCI 3172</button>
       <button class="cs4176" onclick="clickOn(this)">CSCI 4176</button>
@@ -139,7 +146,8 @@
     </div>
     
     <div class="elective">
-      <h3>Elective: <span class="cs3151i cs4145i cs4169i cs4171i cs4174i">0</span> of 2</h3>
+      <h3>Elective: <span class="web cs3151i cs4145i cs4169i cs4171i cs4174i">
+        0</span> of <span class="webC">2</span></h3>
       <button class="cs3151" onclick="clickOn(this)">CSCI 3151</button>
       <button class="cs4145" onclick="clickOn(this)">CSCI 4145</button>
       <button class="cs4169" onclick="clickOn(this)">CSCI 4169</button>

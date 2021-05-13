@@ -1,3 +1,7 @@
+function resetClick() {
+    location.reload();
+}
+
 function clickOn(el) {
     var x = document.getElementsByClassName(el.className);
     var total = document.getElementById("total");
@@ -27,9 +31,8 @@ function clickOn(el) {
     }
 
     document.getElementById("total").innerHTML = value;
-    document.getElementsByClassName(check) = number;
-}
+    document.getElementsByClassName(check).innerHTML = number;
 
-function resetClick() {
-    location.reload();
+    checkCompleted();
+
 }
