@@ -16,6 +16,7 @@ button {
     cursor: pointer;
     border: 1px solid transparent;
     opacity: 0.3;
+    margin: 2px;
 }
 
 button:hover{ 
@@ -25,8 +26,7 @@ button:hover{
 
 #headerId {
     border: 1px solid red;
-    border: 1px solid red;
-    background-color: white;
+    background-color: lightgrey;
     position: sticky;
     top: 0;
     display: flex;
@@ -34,11 +34,52 @@ button:hover{
 
 aside h3 {
     margin: auto;
+    padding-left: 5px;
 }
 
 #resetId {
     opacity: 1;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 1px solid black;
     margin: auto;
+    background-color: blanchedalmond;
 }
+
+#total {
+    color: red;
+}
+
+#completed {
+    color: red;
+}
+
+p {
+    padding-left: 10px;
+}
+
+/* 
+ * Layout Variation:
+ */
+ @media screen and (max-width: 550px) {
+	/* Specify only what will change */
+	#resetId {
+        margin-right: 5px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    p {
+        font-size: 11px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+}
+
