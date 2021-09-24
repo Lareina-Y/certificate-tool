@@ -1,5 +1,5 @@
 # Dal CS Certificate choosing tool
-https://lareina-y.github.io/certificate-tool/
+GitHub Page: https://lareina-y.github.io/certificate-tool/
 
 Tips: 
 1. 内容来源于Dal 官网：若有错误，请联系我改正！
